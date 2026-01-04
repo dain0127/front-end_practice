@@ -1,0 +1,108 @@
+<iframe src="1.html"
+height="200" width="300" title="Iframe Example"></iframe>
+
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>div display 테스트</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      border: 2px solid #333;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+
+    .box {
+      background: lightblue;
+      border: 1px solid #000;
+      padding: 20px;
+      margin: 5px;
+      width: 100px;
+      height: 50px;
+      text-align: center;
+    }
+
+    /* display 테스트용 클래스들 */
+    .block {
+      display: block;
+    }
+
+    .inline {
+      display: inline;
+    }
+
+    .inline-block {
+      display: inline-block;
+    }
+
+    .flex {
+      display: flex;
+      gap: 10px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+    }
+
+    .none {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>div display 속성 테스트</h1>
+
+  <h2>1️⃣ display: block (기본)</h2>
+  <div class="container block">
+    <div class="box">A</div>
+    <div class="box">B</div>
+    <div class="box">C</div>
+  </div>
+
+  <h2>2️⃣ display: inline</h2>
+  <div class="container inline">
+    <div class="box">A</div>
+    <div class="box">B</div>
+    <div class="box">C</div>
+  </div>
+
+  <h2>3️⃣ display: inline-block</h2>
+  <div class="container inline-block">
+    <div class="box">A</div>
+    <div class="box">B</div>
+    <div class="box">C</div>
+  </div>
+
+  <h2>4️⃣ display: flex</h2>
+  <div class="container flex">
+    <div class="box">A</div>
+    <div class="box">B</div>
+    <div class="box">C</div>
+  </div>
+
+  <h2>5️⃣ display: grid</h2>
+  <div class="container grid">
+    <div class="box">A</div>
+    <div class="box">B</div>
+    <div class="box">C</div>
+    <div class="box">D</div>
+    <div class="box">E</div>
+  </div>
+
+  <h2>6️⃣ display: none</h2>
+  <div class="container">
+    <div class="box none">안 보임</div>
+    <div class="box">보임</div>
+  </div>
+
+</body>
+</html>
